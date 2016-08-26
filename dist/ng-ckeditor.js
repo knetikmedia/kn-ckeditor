@@ -61,6 +61,8 @@
                     config.resize_enabled = (attrs.resizeEnabled == "false") ? false : true;
                 }
 
+                config.extraPlugins = 'KnFileUpload';
+
                 var editor = CKEDITOR.appendTo(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
 
                 var addEventListener = function (editor) {

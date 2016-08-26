@@ -1,15 +1,6 @@
 {
   "name": "kn-ckeditor",
   "description": "Angular Module for rendering the CKEditor",
-  "version": "2.0.2",
-  "keywords": [
-    "ckeditor",
-    "WYSIWYG",
-    "js",
-    "front-end",
-    "web"
-  ],
-  "homepage": "https://github.com/miamarti/ng.ckeditor",
   "main": "dist/kn-ckeditor.js",
   "ignore": [
     "/.*",

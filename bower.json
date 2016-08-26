@@ -1,5 +1,5 @@
 {
-  "name": "ng-ckeditor",
+  "name": "kn-ckeditor",
   "description": "Angular Module for rendering the CKEditor",
   "version": "2.0.2",
   "keywords": [
@@ -10,7 +10,7 @@
     "web"
   ],
   "homepage": "https://github.com/miamarti/ng.ckeditor",
-  "main": "dist/ng-ckeditor.min.js",
+  "main": "dist/kn-ckeditor.js",
   "ignore": [
     "/.*",
     "**/.*",
@@ -21,6 +21,6 @@
   ],
   "dependencies": {
     "jquery": ">= 1.9.1",
-    "ckeditor" : "*"
+    "knetik-ckeditor" : "git@github.com:knetikmedia/ckeditor-release.git"
   }
 }

@@ -5,8 +5,8 @@
  * */
 (function (window, document) {
     "use strict";
-    (angular.module('ng.ckeditor', ['ng']))
-    .directive('ngCkeditor', function () {
+    (angular.module('kn-ckeditor', ['ng']))
+    .directive('knCkeditor', function () {
 
         CKEDITOR.on('instanceCreated', function (event) {
             var editor = event.editor,

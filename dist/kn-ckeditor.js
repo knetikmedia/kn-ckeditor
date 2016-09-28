@@ -100,20 +100,24 @@
 
                 scope.$watch('ngModel', function (value) {
                     if(value !== editor.getData()){
-                        setValue(value, editor);   
+                        setValue(value, editor);
                     }
                 });
 
                 scope.$watch('ngDisabled', function (value) {
-                    if (value) {
+                    if (value != null && config.readOnly!==true) {
+                        editor.destroy();
                         config.readOnly = true;
-                    } else {
+                        editor = CKEDITOR.replace(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
+                    } else if(value != null && config.readOnly!==false){
+                        editor.destroy();
                         config.readOnly = false;
+                        editor = CKEDITOR.replace(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
                     }
 
-                    //editor = CKEDITOR.replace(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
-                    editor.destroy();
-                    editor = CKEDITOR.appendTo(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
+                    // editor = CKEDITOR.replace(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
+                    // editor.destroy();
+                    //editor = CKEDITOR.appendTo(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
                     addEventListener(editor);
                     editor.setData(scope.ngModel);
 

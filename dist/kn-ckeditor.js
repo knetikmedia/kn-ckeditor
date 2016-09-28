@@ -115,9 +115,6 @@
                         editor = CKEDITOR.replace(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
                     }
 
-                    // editor = CKEDITOR.replace(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
-                    // editor.destroy();
-                    //editor = CKEDITOR.appendTo(elemEditor[0], (scope.ngConfig ? scope.ngConfig : config), '');
                     addEventListener(editor);
                     editor.setData(scope.ngModel);
 

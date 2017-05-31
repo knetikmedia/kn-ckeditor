@@ -1,5 +1,6 @@
 {
   "name": "kn-ckeditor",
+  "version": "3.0.4",
   "description": "Angular Module for rendering the CKEditor",
   "main": "dist/kn-ckeditor.min.js",
   "ignore": [

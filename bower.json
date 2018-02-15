@@ -12,6 +12,6 @@
   ],
   "dependencies": {
     "jquery": ">= 1.9.1",
-    "knetik-ckeditor" : "git@github.com:knetikmedia/ckeditor-release.git#3.2"
+    "knetik-ckeditor" : "git@github.com:knetikmedia/ckeditor-release.git#3.3"
   }
 }
